@@ -1,0 +1,7 @@
+[package]
+name = "paralelismo_com_rayon"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rayon = "1.5.1"
