@@ -1,0 +1,7 @@
+[package]
+name = "crate_macro"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+minha_macro_lib = {path = "../minha_macro_lib"}

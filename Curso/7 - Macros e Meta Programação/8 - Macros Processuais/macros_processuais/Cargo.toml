@@ -1,0 +1,8 @@
+[package]
+name = "macros_processuais"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+macro_derive_traits = {path = "../macro_derive_traits"}
+macro_derive = {path = "../macro_derive"}
