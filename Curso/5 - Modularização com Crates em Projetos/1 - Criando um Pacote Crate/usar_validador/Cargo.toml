@@ -1,0 +1,16 @@
+[package]
+name = "usar_validador"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+validador = {path = "../validador"}
+
+# Incluíndo biblioteca do GitHub
+# nome_do_pacote_no_github = {git = "link do repositório"} # Inclui uma biblioteca disponível no github
+# nome_do_pacote_no_github = {git = "link do repositório", branch="nome da branch"} # Busca de uma branch específica
+# nome_do_pacote_no_github = {git = "link do repositório", tag="versão"} # Busca de uma versão específica
+# nome_do_pacote_no_github = {git = "link do repositório", rev="número do commit"} # Busca de um commit específico
+
+# Incluíndo biblioteca do crates.io
+# nome_do_pacote_no_cratesio = versão (0.0.0) # Inclui uma biblioteca disponível no crates.io
