@@ -1,0 +1,35 @@
+{% extends "layouts/application" %}
+
+{% block title %}
+    Tabela de Clientes
+{% endblock title %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Tabela de Clientes</h1>
+        <hr>
+        <a href="/clients/new" class="btn btn-primary">Novo</a>
+        <hr>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th colspan="2">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for client in clients %}
+                <tr>
+                    <td>{{ client.id }}</td>
+                    <td>{{ client.name }}</td>
+                    <td>{{ client.cpf }}</td>
+                    <td class="width_30" ><a href="/clients/{{ client.id }}/update" class="btn btn-warning">Alterar</a></td>
+                    <td class="width_30" ><a href="/clients/{{ client.id }}/delete" onclick="return confirm('Confirma exclusão?');" class="btn btn-danger">Excluir</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% extends "layouts/application" %}
+
+{% block title %}
+    Página Inicial
+{% endblock title %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Início</h1>
+    </div>
+{% endblock content %}
